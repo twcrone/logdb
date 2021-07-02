@@ -5,7 +5,7 @@ import scala.io.Source
 
 object Main extends App {
   var db:Map[String, List[String]] = Map()
-  val logfile = "/Users/tcrone/lib/newrelic/logs/newrelic_agent.log"
+  val logfile = "newrelic_agent_log"
   val bufferedSource = Source.fromFile(logfile)
   for(line <- bufferedSource.getLines()) {
     val strings = line.split(" ")
