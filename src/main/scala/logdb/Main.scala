@@ -20,7 +20,7 @@ object Main extends App {
     for (s <- strings) {
       if (s.startsWith("com.newrelic.agent.Transaction@")) {
         var transactionId = s.substring(31)
-        var index = indexOfTransactionEndChar(transactionId)
+        val index = indexOfTransactionEndChar(transactionId)
         if (index != -1) {
           transactionId = transactionId.substring(0, index)
         }
