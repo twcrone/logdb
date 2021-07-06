@@ -1,1 +1,3 @@
-# logdb
+# slogdb
+
+NOT ACTIVE DEVELOPMENT
